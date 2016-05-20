@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="passwordgenerator.apps.alexbykov.ru.passwordgen.MainActivity">
+
+    <TextView
+        android:id="@+id/resultPasswordTextView"
+        style="@android:style/TextAppearance.Small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+       android:textColor="@color/colorPrimaryDark"
+
+
+        />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultPasswordTextView"
+        android:paddingBottom="16dp"
+
+
+        >
+
+
+        <TextView
+            android:id="@+id/lengthTextView"
+            style="@android:style/TextAppearance.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/length"
+            android:textColor="@color/colorPrimaryDark"
+
+
+            />
+
+        <Button
+            style="@android:style/TextAppearance.Small"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/textDecButton"
+            android:textColor="@color/buttonText"
+            android:id="@+id/buttonDecQuantity"
+            android:gravity="center" />
+
+        <TextView
+            style="@android:style/TextAppearance.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/minPasswordLength"
+            android:id="@+id/quantityOfCharsTextView" />
+
+        <Button
+            android:textSize="12sp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/textIncButton"
+            android:textColor="@color/buttonText"
+
+
+            android:id="@+id/buttonIncQuantity"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayoutHeader"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+
+
+        >
+
+
+        <CheckBox
+            android:id="@+id/lowerCaseCheckBox"
+            style="@android:style/TextAppearance.Small"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/lowerCaseCheckBoxText"
+             />
+
+        <CheckBox
+            android:id="@+id/upperCaseCheckBox"
+            style="@android:style/TextAppearance.Small"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/upperCaseCheckBoxText"
+             />
+
+        <CheckBox
+            android:id="@+id/digitsCheckBox"
+            style="@android:style/TextAppearance.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="@string/digitsCheckBoxText" />
+
+        <CheckBox
+            android:id="@+id/specialCharactersCheckBox"
+            style="@android:style/TextAppearance.Small"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+
+            android:text="@string/specialCharactersCheckBoxText"
+            android:layout_gravity="center"
+            android:checked="false" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:paddingTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical"
+        >
+
+
+        <Button
+            android:id="@+id/buttonGenerate"
+            style="@android:style/TextAppearance.Small"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/buttonGenerateText"
+            android:textColor="@color/buttonText"
+            android:gravity="center"
+            />
+
+        <Button
+            android:id="@+id/buttonCopyToClipboard"
+            style="@android:style/TextAppearance.Small"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/buttonCopyToClipboardText"
+            android:textColor="@color/buttonText"
+            android:gravity="center"
+
+
+
+
+
+
+            />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="passwordgenerator.apps.alexbykov.ru.passwordgen.MainActivity">
+
+    <TextView
+        android:id="@+id/resultPasswordTextView"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+
+
+        />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultPasswordTextView"
+        android:paddingBottom="16dp"
+
+
+        >
+
+
+        <TextView
+            android:id="@+id/lengthTextView"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/length"
+
+
+            />
+
+        <Button
+            style="@android:style/TextAppearance.Small"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/textDecButton"
+            android:textColor="@color/buttonText"
+            android:id="@+id/buttonDecQuantity" />
+
+        <TextView
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/minPasswordLength"
+            android:id="@+id/quantityOfCharsTextView" />
+
+        <Button
+            style="@android:style/TextAppearance.Small"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/textIncButton"
+            android:textColor="@color/buttonText"
+
+
+            android:id="@+id/buttonIncQuantity" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/linearLayoutHeader"
+        android:orientation="vertical">
+
+
+        <CheckBox
+            android:id="@+id/lowerCaseCheckBox"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/lowerCaseCheckBoxText" />
+
+        <CheckBox
+            android:id="@+id/upperCaseCheckBox"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/upperCaseCheckBoxText" />
+
+        <CheckBox
+            android:id="@+id/digitsCheckBox"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/digitsCheckBoxText" />
+
+        <CheckBox
+            android:id="@+id/specialCharactersCheckBox"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="48dp"
+            android:checked="false"
+            android:text="@string/specialCharactersCheckBoxText" />
+
+        <Button
+            android:id="@+id/buttonGenerate"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/buttonGenerateText"
+            android:textColor="@color/buttonText" />
+
+        <Button
+            android:id="@+id/buttonCopyToClipboard"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonCopyToClipboardText"
+            android:textColor="@color/buttonText" />
+    </LinearLayout>
+
+
+</RelativeLayout>

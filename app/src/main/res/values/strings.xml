@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PassGen v. 1.0</string>
+    <string name="length">Password lenght:</string>
+    <string name="textIncButton">+</string>
+    <string name="textDecButton">-</string>
+    <string name="minPasswordLength">6</string>
+    <string name="buttonGenerateText">Generate</string>
+    <string name="upperCaseCheckBoxText">Upper case</string>
+    <string name="digitsCheckBoxText">Digits</string>
+    <string name="lowerCaseCheckBoxText">Lower case</string>
+    <string name="buttonCopyToClipboardText">copy to clipboard</string>
+    <string name="specialCharactersCheckBoxText">Special characters</string>
+</resources>
